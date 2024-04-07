@@ -1,0 +1,118 @@
+:root {
+    /* Colors */
+
+    --light-blue-color: hsl(178, 60%, 48%);
+    --light-blue-hover: hsl(178, 75%, 65%);
+    --light-yellow-color: hsl(39, 88%, 58%);
+    --light-yellow-hover: hsl(39, 100%, 69%);
+    --dark-navy-color: hsl(202, 32%, 15%);
+    --semi-dark-navy: hsl(199, 35%, 19%);
+    --silver-color: hsl(198, 23%, 72%);
+    --silver-hover-color: hsl(197, 33%, 89%);
+
+    /* Font Sizes */
+    
+    --font-family-default: "Outfit", sans-serif;
+    --h1-heading-font-size: 2.5rem;
+    --h2-heading-font-size: 1.5rem;
+    --h3-heading-font-size: 1.25rem;
+    --xs-heading-font-size: 1rem;
+    --body-font-size: 0.875rem;
+
+    /* Letter Spacing */
+
+    --h1-letter-spacing-size: 0.156rem;
+    --h2-letter-spacing-size: 0.094rem;
+    --h3-letter-spacing-size: 0.078rem;
+    --xs-heading-spacing-size: 0.063rem;
+    --body-letter-spacing-size: 0.055rem;
+
+    /* Screen Size */
+
+    --small-mobile-screen: 20rem;
+    --large-mobile-screen: 23.438rem;
+
+    --small-tablet-screen: 36rem;
+    --medium-tablet-screen: 48rem;
+    --large-tablet-screen: 64rem;
+
+    --xtra-small-desktop-screen: 73.125rem;
+    --small-desktop-screen: 90rem;
+    --medium-desktop-screen: 93.75rem;
+    --large-desktop-screen: 128rem;
+    --ultra-large-desktop-screen: 160rem;
+}
+
+@media screen and (max-width: var(--small-mobile-screen)) {
+    body {
+        max-width: var(--small-mobile-screen);
+    }
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background: var(--dark-navy-color);
+}
+
+.grid {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.choice-itm {
+    width: 25%;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.instruction__txt {
+    background: initial;
+}
+
+.instructions {
+    background: var(--semi-dark-navy);
+    width: 280px;
+    height: 255px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.625rem;
+}
+
+.mark-div {
+    width: 90%;
+    border-radius: 0.625rem;
+    padding: 0.55rem 0 0.55rem 0;
+}
+
+.o-outline {
+    background: var(--silver-color);
+}
+
+.choice__img-start {
+    gap: 2rem;
+}
+
+.choice__img {
+    margin: 6rem 0 2.4rem 0;
+}
+
+.start-screen-title,.instructions-subtitle {
+    color: var(--silver-color);
+}
+
+.start-screen-title {
+    font-size: var(--xs-heading-font-size);
+}
+
+.instructions-subtitle {
+    font-size: var(--body-font-size);
+    opacity: .5;
+}
