@@ -20,24 +20,21 @@
 <main class="main container grid">
 <div class="instructions start-screen">
   <h1 class="start-screen-title instruction__txt">Pick player 1's mark</h1>
-  <div class="mark-div choice__img-start grid">
-    <img src="images/icon-x-outline.svg" alt="" class="choice-img x-outline">
-    <img src="images/icon-o-outline.svg" alt="" class="choice-img o-outline">
+  <div class="mark-div choice__img-start">
+    <button class="choice-img button"><img src="images/icon-x-outline.svg" alt="" class="choice-img x-outline"></button>
+    <button class="choice-img button chosen"><img src="images/icon-o-outline.svg" alt="" class="choice-img o-outline"></button>
   </div>
   <h2 class="instructions-subtitle instruction__txt">Remember: X goes first</h2>
 </div>
 <div class="player__choice game__type container__col">
-  <!-- <button class="new__game-cpu button" id="btn-cpu">New Game (vs CPU)</button>
-  <button class="new__game-player button" id="btn-player">New Game (vs player)</button> -->
+  <button class="new__game-cpu button" id="btn-cpu">New Game (vs CPU)</button>
+  <button class="new__game-player button" id="btn-player">New Game (vs player)</button>
 </div>
 </main>
 <!-- New game menu end -->
 
 <footer class="footer container grid">
-
-</footer>
-
-  <!-- Game board start -->
+<!-- Game board start -->
 
   <!-- x/o icon --> turn
 
@@ -58,6 +55,7 @@
   No, cancel
   Yes, restart
 
-  Game board end
+  <!-- Game board end -->
+</footer>
 </body>
 </html>
