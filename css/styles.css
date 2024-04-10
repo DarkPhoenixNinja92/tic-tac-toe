@@ -82,8 +82,12 @@ body,.unselected-btn {
 }
 
 .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
     border: inherit;
+    padding: 0.6rem;
 }
 
 .o-outline,.x-outline {
@@ -140,21 +144,18 @@ body,.unselected-btn {
     justify-content: center;
 }
 
-.choice-img {
+.choice-inactive {
     fill: var(--silver-color);
+    stroke: var(--dark-navy-color);
 }
 
-.o-outline {
-    padding: 0;
-    background: var(--silver-color);
+.chosen {
+    background-color: var(--silver-color);
 }
 
 .choice-active {
     fill: var(--dark-navy-color);
-}
-
-.chosen,.choice-active {
-    background-color: var(--silver-color);
+    stroke: var(--silver-color);
 }
 
 .game__type {
@@ -185,6 +186,6 @@ body,.unselected-btn {
     margin-bottom: 1.15rem;
 }
 
-.footer {
+#gameBoard {
     display: none;
 }
