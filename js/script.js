@@ -5,6 +5,7 @@ const outlineO = document.querySelector('.o-outline');
 const cpuGame = document.getElementById('btn-cpu');
 const playerGame = document.getElementById('btn-player');
 const gameBoard = document.getElementById('gameBoard');
+const startScreen = document.querySelector('.main');
 const activeBtn = document.querySelector('.choice-active');
 const inactiveBtn = document.querySelector('.choice-inactive');
 
@@ -18,6 +19,8 @@ chooseXBtn.addEventListener('click', () => {
         chooseXBtn.classList.add('chosen');
         outlineX.classList.add('choice-active');
         outlineX.classList.remove('choice-inactive');
+        outlineO.classList.remove('choice-active');
+        outlineO.classList.add('choice-inactive');
     }
 });
 
@@ -27,15 +30,21 @@ chooseOBtn.addEventListener('click', () => {
         chooseXBtn.classList.remove('chosen');
         chooseOBtn.classList.remove('unselected-btn');
         chooseOBtn.classList.add('chosen');
+        outlineX.classList.remove('choice-active');
+        outlineX.classList.add('choice-inactive');
         outlineO.classList.add('choice-active');
         outlineO.classList.remove('choice-inactive');
     }
 });
 
 cpuGame.addEventListener('click', () => {
-    alert("CPU Mode");
+    gameBoard.style.display = 'initial';
+    startScreen.style.display = 'none';
+    alert('CPU');
 })
 
 playerGame.addEventListener('click', () => {
-    alert("Player Mode");
+    gameBoard.style.display = 'initial';
+    startScreen.style.display = 'none';
+    alert('Player');
 })

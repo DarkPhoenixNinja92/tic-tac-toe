@@ -146,7 +146,7 @@ body,.unselected-btn {
 
 .choice-inactive {
     fill: var(--silver-color);
-    stroke: var(--silver-color);
+    stroke: var(--dark-navy-color);
 }
 
 .chosen {
