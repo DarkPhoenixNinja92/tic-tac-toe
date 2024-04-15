@@ -186,6 +186,14 @@ body,.unselected-btn {
     margin-bottom: 1.15rem;
 }
 
+.grid-choice-card {
+    fill: var(--light-blue-color);
+    stroke: var(--light-blue-color);
+    background: var(--semi-dark-navy);
+}
+
 #gameBoard {
-    display: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
